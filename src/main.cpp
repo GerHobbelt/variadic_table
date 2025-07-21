@@ -5,8 +5,7 @@ main()
 {
   // Tiny Table
   {
-    VariadicTable<std::string, double, int, std::string> vt({"Name", "Weight", "Age", "Brother"},
-                                                            10);
+    VariadicTable<std::string, double, int, std::string> vt({"Name", "Weight", "Age", "Brother"}, 10);
 
     vt.addRow("Cody", 180.2, 40, "John");
     vt.addRow("David", 175.3, 38, "Andrew");
@@ -17,8 +16,7 @@ main()
 
   // More Data
   {
-    VariadicTable<std::string, double, double, double> vt({"Section", "Self", "Children", "Total"},
-                                                          12);
+    VariadicTable<std::string, double, double, double> vt({"Section", "Self", "Children", "Total"}, 12);
 
     vt.setColumnFormat({VariadicTableColumnFormat::AUTO,
                         VariadicTableColumnFormat::SCIENTIFIC,

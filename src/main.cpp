@@ -1,7 +1,12 @@
 #include "VariadicTable.h"
 
+#if defined(BUILD_MONOLITHIC)
+#define main  variadic_table_demo_main
+#endif
+
+extern "C"
 int
-main()
+main(void)
 {
   // Tiny Table
   {
@@ -50,4 +55,6 @@ main()
 
     vt.print(std::cout);
   }
+
+  return 0;
 }

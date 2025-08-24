@@ -393,7 +393,7 @@ protected:
     for (unsigned int j = 0; j < (unsigned int) _headers.size(); j++)
     {
       for (unsigned int i = 0; i < _num_columns; i++) {
-        _column_sizes[i] = std::max(_column_sizes[i], (unsigned int) _headers[j][i].size());
+        _column_sizes[i] = std::max(_column_sizes[i], _headers[j][i].size());
       }
     }
 
